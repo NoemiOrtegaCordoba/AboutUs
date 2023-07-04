@@ -1,0 +1,32 @@
+/*----------------------
+    Grid-Items
+-----------------------*/
+.grid-item1 {
+  grid-area: heading;
+}
+
+.grid-item2 {
+  grid-area: description;
+}
+
+.grid-item3 {
+  margin-top: 60px;
+  grid-area: images;
+}
+
+.grid-item5 {
+  grid-area: author;
+  text-align: center;
+}
+
+/*----------------------
+    Grid-Container
+-----------------------*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "heading description"
+    "images images"
+    "author author";
+}
